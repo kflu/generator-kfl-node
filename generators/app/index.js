@@ -27,7 +27,8 @@ module.exports = yeoman.Base.extend({
       this.fs.copy(this.templatePath('src/index.js'), this.destinationPath('src/' + this.props.name + '.js'));
   },
 
-  install: function () {
-    this.npmInstall();
+  install: function() {
+      this.log(chalk.bgGreen("Don't forget to run npm install !!"));
   }
+  
 });
