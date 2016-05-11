@@ -1,19 +1,22 @@
 {
   "name": "<%= name %>",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
     "compile": "babel -d lib src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-polyfill": "^6.7.4",
     "bluebird": "^3.3.4",
     "lodash": "^4.6.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.8.0",
     "babel-plugin-syntax-async-functions": "^6.5.0",
     "babel-plugin-transform-class-properties": "^6.6.0",
     "babel-plugin-transform-regenerator": "^6.6.5",
