@@ -21,8 +21,8 @@ module.exports = yeoman.Base.extend({
 
   writing: function () {
       this.fs.copyTpl(this.templatePath('package.json'), this.destinationPath('package.json'), {name: this.props.name});
-      this.fs.copy(this.templatePath('.babelrc'), this.destinationPath('.babelrc'));
-      this.fs.copy(this.templatePath('.eslintrc.json'), this.destinationPath('.eslintrc.json'));
+      this.fs.copy(this.templatePath('babelrc'), this.destinationPath('.babelrc'));
+      this.fs.copy(this.templatePath('eslintrc.json'), this.destinationPath('.eslintrc.json'));
       this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
       this.fs.copy(this.templatePath('src/index.js'), this.destinationPath('src/' + this.props.name + '.js'));
   },
